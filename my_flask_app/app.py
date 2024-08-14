@@ -12,12 +12,16 @@ generator = pipeline('text-generation', model='gpt2')
 def home():
     return "Welcome to the Coding Puzzle Website!"
 
+generator = pipeline('text-generation', model='gpt2')
+
 @app.route('/generate', methods=['POST'])
 def generate_problem():
-    prompt = request.json.get('prompt', 'Generate a coding problem.')
-    result = generator(prompt, max_length=100, num_return_sequences=1)
+    prompt = request.json.get('prompt', 'Write a unique Python coding problem in the language python.')
+    result = generator(prompt, max_length=40, num_return_sequences=1, temperature=0.7)
     problem = result[0]['generated_text']
-    print("Generated problem:", problem)  # This line prints the generated problem to your terminal
+
+   
+
     return jsonify(problem=problem)
 
 if __name__ == '__main__':

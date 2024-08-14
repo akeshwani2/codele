@@ -14,7 +14,7 @@ function CodingProblemGenerator() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          prompt: 'Generate a Python coding problem, description in 100 characters or less that is straight to the point',
+           "prompt": "Write a unique Python coding problem in the language python.",
         }),
       });
 
