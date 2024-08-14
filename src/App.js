@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Input from './components/Input';
+import Feedback from './components/Feedback';
+import Attempts from './components/Attempts';
+import './App.css'; // For styling
 
 function App() {
+  const [feedback, setFeedback] = useState('');
+  const [attemptsLeft, setAttemptsLeft] = useState(5); // Assume 6 attempts like Wordle
+  const correctAnswer = 'console.log("Hello World");'; // Example correct code
+
+  const handleSubmit = (guess) => {
+    if (guess === correctAnswer) {
+      setFeedback('Correct!');
+    } else {
+      setFeedback('Try Again!');
+      setAttemptsLeft(attemptsLeft - 1);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Attempts count={attemptsLeft} />
+      <Input onSubmit={handleSubmit} />
+      <Feedback message={feedback} />
     </div>
   );
 }
