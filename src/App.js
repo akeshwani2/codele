@@ -4,6 +4,7 @@ import Input from './components/Input';
 import Feedback from './components/Feedback';
 import Attempts from './components/Attempts';
 import './App.css'; // For styling
+import CodingProblemGenerator from './components/CodingProblemGenerator';
 
 function App() {
   const [feedback, setFeedback] = useState('');
@@ -25,7 +26,10 @@ function App() {
       <Attempts count={attemptsLeft} />
       <Input onSubmit={handleSubmit} />
       <Feedback message={feedback} />
+      
+      <CodingProblemGenerator />
     </div>
+    
   );
 }
 

@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 from transformers import pipeline
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 # Load the AI model (e.g., GPT-2)
 generator = pipeline('text-generation', model='gpt2')
