@@ -2,11 +2,12 @@
 export const LANGUAGE_VERSIONS = {
     javascript: "18.15.0",
     typescript: "5.0.3",
-    python: "3.10.0",
+    python: "3.10.9",
     java: "15.0.2",
-    csharp: "6.12.0",
+    csharp: "6.0.2",
     php: "8.2.3",
-};
+    cpp: "10.2.0",
+  };
 
 export const CODE_SNIPPETS = {
 // JAVASCRIPT
@@ -35,7 +36,11 @@ export const CODE_SNIPPETS = {
 
     
 // PHP
-    php: `\n<?php\n$name = "Arhaan";\necho $name;\n?>`
-  };
-  
+    php: `\n<?php\n$name = "Arhaan";\necho $name;\n?>`,
 
+// C++
+    cpp: `#include <iostream>\nusing namespace std; \n\nint main() {
+        cout << "Hello, Arhaan!" << endl;
+        return 0;
+    }`,
+};
