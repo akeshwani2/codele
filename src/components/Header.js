@@ -1,9 +1,8 @@
-import React from 'react';
 
 function Header() {
   return (
     <header>
-      <h1>Codele</h1>
+      <h1><span className="code">CODE</span>LE</h1>
     </header>
   );
 }

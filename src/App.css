@@ -24,3 +24,15 @@ button {
 body {
     font-family: 'Press Start 2P', system-ui;
     overflow: hidden; }
+
+.end-cred {
+    font-size: 5.5px;
+    padding-top: .5%;
+    padding-bottom: .9%;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.code {
+    color:cyan;
+}
+
