@@ -1,4 +1,3 @@
-
 # Codele
 
 Codele is a beginner-friendly learning platform inspired by the popular game Wordle. It offers a new coding challenge every day, providing users with an engaging way to improve their programming skills.
