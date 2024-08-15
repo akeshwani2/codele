@@ -1,54 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
+header {
+    background: #0f0a19;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', system-ui;
+    padding-top:1.5%;
+    font-size: 20px;
+}
 
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* This will push the button to the right */
+  }
+  
+button {
+    font-family: 'Press Start 2P', system-ui;
+    font-size: small;
+}
+  
 
 body {
     font-family: 'Press Start 2P', system-ui;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    
-  }
-
-  p {
-    color: rgb(0, 0, 0);
-  }
-
-  h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    margin: 0;
-    font-size: 60px; /* Adjust size as necessary */
-    color: red; /* Keep your existing styling */
-    
-
-  }
-
-  
-  input {
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    width: 300px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  p {
-    font-size: 18px;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+    overflow: hidden; }
