@@ -14,6 +14,7 @@ function App() {
         <CodeEditor />
       <div>
       <Text className="end-cred">Made by Arhaan Keshwani, Andi</Text>
+      <Text className="copy">© 2024 Codele. All rights reserved.</Text>
       </div>  
       </Box>
     </div>

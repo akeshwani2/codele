@@ -1,8 +1,9 @@
+import './Header.css'; // Import the CSS file
 
 function Header() {
   return (
-    <header>
-      <h1><span className="code">CODE</span>LE</h1>
+    <header className="logo-container">
+      <img className="header-image" src="codele.png" alt="Logo" width={100}/>
     </header>
   );
 }

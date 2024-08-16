@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
-header {
-    background: #0f0a19;
+img {
     text-align: center;
-    justify-content: center;
-    font-family: 'Press Start 2P', system-ui;
-    padding-top:1.5%;
-    font-size: 20px;
 }
 
 .button-container {
@@ -23,12 +17,18 @@ button {
 
 body {
     font-family: 'Press Start 2P', system-ui;
-    overflow: hidden; }
+     overflow: hidden;
+    }
 
 .end-cred {
-    font-size: 5.5px;
+    font-size: 9px;
     padding-top: .5%;
-    padding-bottom: .9%;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.copy {
+    font-size: 9px;
+    padding-top: .3%;
     font-family: "Press Start 2P", system-ui;
 }
 
@@ -36,3 +36,11 @@ body {
     color:cyan;
 }
 
+.container {
+    text-align: center;
+}
+
+.otp {
+    font-family: 'Press Start 2P', system-ui;
+    font-size: small;
+}

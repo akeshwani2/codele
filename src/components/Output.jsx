@@ -30,11 +30,11 @@ const Output = ({ editorRef, language }) => {
   };
 
   return (
-    <Box w="50%">
+    <Box w="50%" >
       <div className="button-container">
       <Button
         variant="outline"
-        colorScheme="green"
+        colorScheme= "green"
         mb={4}
         isLoading={isLoading}
         onClick={runCode}
@@ -43,12 +43,13 @@ const Output = ({ editorRef, language }) => {
       </Button>
       </div>
       <Box
-        height="75vh"
+        height="70vh"
         p={2}
         color={isError ? "red.400" : ""}
         border="1px solid"
         borderRadius={4}
         borderColor={isError ? "red.500" : "#333"}
+        className="otp"
       >
         {output
           ? output.map((line, i) => <Text key={i}>{line}</Text>)
