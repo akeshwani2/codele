@@ -17,7 +17,7 @@ button {
 
 body {
     font-family: 'Press Start 2P', system-ui;
-     overflow: hidden;
+     overflow: hidden; 
     }
 
 .end-cred {
@@ -43,4 +43,21 @@ body {
 .otp {
     font-family: 'Press Start 2P', system-ui;
     font-size: small;
+}
+
+.welc {
+    font-family: 'Press Start 2P', system-ui;
+
+}
+
+.welcome {
+    font-family: 'Press Start 2P', system-ui;
+    padding-bottom: 10px;
+    font-size: 48px;
+    padding-top: 10px;
+}
+
+img {
+    text-align: center;
+    width: 120px;
 }
