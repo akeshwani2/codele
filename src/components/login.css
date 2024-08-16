@@ -1,0 +1,36 @@
+/* top Login text */
+.field {
+    text-align: center;
+    font-size: medium;
+    margin-bottom: 50px;
+    padding-top: 325px;
+    font-family: 'Press Start 2P', system-ui;
+
+}
+
+
+/* login field */
+.logfield {
+    text-align: center;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: x-large;
+
+}
+
+/* password field */
+.passfield {
+    padding-top: 12px;
+    text-align: center;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: x-large;
+    margin-bottom: 50px;
+
+}
+
+
+/* login button */
+.butt-container {
+    display: flex;
+    justify-content: center;
+}
+

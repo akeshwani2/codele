@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
+import { Navigate } from "react-router-dom";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -12,7 +13,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      console.log("User signed up");
+      Navigate("/login")
     } catch (error) {
       setError(error.message);
     }
