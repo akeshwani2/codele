@@ -1,51 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { Box, Text } from "@chakra-ui/react";
-import Header from './components/Header';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { auth } from './firebase';
+import SignUpForm from './SignUpForm';
+import Login from './Login';
+import Dashboard from './Dashboard';
 import CodeEditor from './components/CodeEditor';
-import Login from "./components/login";
-import Signup from "./components/signup";
-import LandingPage from "./components/landingPage";
-import { auth } from './firebase'; 
-import './App.css'; // For styling
+import ProtectedRoute from './ProtectedRoute';
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(user => {
-      setIsAuthenticated(!!user);
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setUser(user); // Update state when auth state changes
     });
 
-    return () => unsubscribe();
+    return () => unsubscribe(); // Cleanup subscription on unmount
   }, []);
 
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        {/* Landing page for users who aren't logged in */}
-        <Route path="/" element={isAuthenticated ? <MainContent /> : <LandingPage />} />
-        <Route path="/login" element={isAuthenticated ? <Navigate to="/" /> : <Login />} />
-        <Route path="/signup" element={isAuthenticated ? <Navigate to="/" /> : <Signup />} />
+        <Route path="/" element={<Dashboard className="dash" />} />
+        <Route path="/signup" element={<div className="sign"><SignUpForm /></div>} />
+        <Route path="/login" element={<div className='log'><Login /></div>} />
+        <Route
+          path="/content"
+          element={
+            <ProtectedRoute>
+              <div className="code-edi"><CodeEditor /></div>
+            </ProtectedRoute>
+          }
+        />
       </Routes>
-    </Router>
-  );
-}
-
-function MainContent() {
-  return (
-    <div>
-      <Header />
-      <Box
-        minH="100vh" bg="#0f0a19" color="gray.500" px={6} py={8}
-      >
-        <CodeEditor />
-        <div>
-          <Text className="end-cred">Made by Arhaan Keshwani, Andi</Text>
-          <Text className="copy">© 2024 Codele. All rights reserved.</Text>
-        </div>
-      </Box>
-    </div>
+    </BrowserRouter>
   );
 }
 
