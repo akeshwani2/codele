@@ -129,14 +129,28 @@ img {
     padding-bottom: 600px;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically in the center */
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.soc-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px; /* Add some spacing between the icons */
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
 .log-out {
-    padding-top: 12px;
-    padding-right: 12px;
     display: flex;
     justify-content: flex-end;
-    box-shadow: 0px 0px 12px rgb(251, 37, 37);
-
+    padding-right: 12px;
 }
+
 
 
 
@@ -205,7 +219,7 @@ img {
 .error-style {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
 }
 
 
@@ -234,11 +248,10 @@ img {
 .testtt {
     display: flex;
     justify-content: center;
-
+}
 
 /* TITLES */
 
-}
 /* Login title */
 .login-t {
     font-size: 60px;
@@ -288,13 +301,11 @@ img {
 .log-pass {
     padding-top: 5px;
     box-shadow: 0px 0px 50px rgb(115, 115, 234); /* Adds a white shadow */
-
 }
 
 .sign-up-pass-field {
     padding-top: 5px;
     box-shadow: 0px 0px 50px rgb(115, 115, 234);
-
 }
 
 
@@ -305,11 +316,9 @@ img {
 
 .test-log:hover {
     text-shadow: 0px 0px 10px rgb(7, 6, 6);
-
 }
 .signup-log:hover {
     text-shadow: 0px 0px 10px rgb(7, 6, 6);
-
 }
 .signup-log {
     font-size: 30px;
@@ -324,7 +333,6 @@ img {
     margin-top: 100px;
     box-shadow: 0px 0px 50px #7B68EE, 0px 0px 50px #8A2BE2;
     background-color: #0f0a19; /* Ensure the box itself has the same background */
-
 }
 
 .login-pass {
@@ -334,7 +342,6 @@ img {
     font-size: 25px;
     padding-bottom: 12px;
     text-shadow: 0px 0px 12px rgb(169, 116, 255);
-
 }
 
 .signup-pass {
@@ -344,8 +351,6 @@ img {
     font-size: 25px;
     padding-bottom: 12px;
     text-shadow: 0px 0px 12px rgb(169, 116, 255);
-
-    
 }
 
 .login-email {
@@ -366,7 +371,6 @@ img {
     font-size: 25px;
     padding-bottom: 10px;
     text-shadow: 0px 0px 12px rgb(169, 116, 255);
-
 }
 
 
@@ -419,15 +423,15 @@ justify-content: center;
 margin: 10px 0; /* Adjust the spacing between elements */
 }
 
+
 .divider-line {
 flex-grow: 1;
 height: 1px;
 background-color: #7B68EE; /* Line color matching your theme */
 margin: 0 10px; /* Spacing around the text */
 text-shadow: 0px 0px 1px rgb(169, 116, 255);
-
-
 }
+
 
 .divider {
 text-shadow: 0px 0px 20px rgb(169, 116, 255);
@@ -435,3 +439,13 @@ color: blue;
 font-size: 25px;
 margin: 0 10px; /* Spacing between the lines */
 }
+
+
+
+/* Social buttons */
+
+
+
+
+/* {icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/arhaan-keshwani"},
+    {icon: <FaGithub />, path: "https://github.com/akeshwani2"}, */

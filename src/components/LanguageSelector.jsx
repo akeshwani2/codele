@@ -11,7 +11,7 @@ import {
 
 
   const languages = Object.entries(LANGUAGE_VERSIONS);
-  const ACTIVE_COLOR = "cyan";
+  const ACTIVE_COLOR = "#7B68EE";
   
   const LanguageSelector = ({ language, onSelect }) => {
     return (

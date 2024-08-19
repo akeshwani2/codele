@@ -7,10 +7,6 @@ import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from "firebas
 import { getAuth, sendPasswordResetEmail } from "firebase/auth";
 import{ FaGoogle } from "react-icons/fa"
 
-
-
-
-
 const firebaseErrors = {
   'auth/email-already-in-use': 'This email is already in use. Please try logging in.',
   'auth/invalid-email': 'The email address is not valid.',
