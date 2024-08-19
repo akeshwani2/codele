@@ -16,7 +16,10 @@ const Dashboard = ({className}) => {
     }
 
   return (
-    <div className={className}>  
+    <div className={className}>
+        <header className="dash-logo-container">
+            <img className="header-image-dash" src="codele.png" alt="Logo" />
+        </header>  
         <div>
             <form>
                 <div className='dash-t'>

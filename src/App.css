@@ -2,6 +2,9 @@
 
 body, #root {
     background-color: #0f0a19;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 
@@ -28,16 +31,19 @@ body {
 .names {
     font-size: 7px;
     padding-top: .65%;
-    padding-left: .3%;
+    padding-left: .75%;
     font-family: "Press Start 2P", system-ui;
     background-color: #0f0a19;
+}
+.names:hover {
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
 }
 
 .copyright {
     font-size: 7px;
     font-family: "Press Start 2P", system-ui;
     background-color: #0f0a19;
-    padding-left: .3%;
+    padding-left: .75%;
     padding-bottom: 5%;
 
 }
@@ -106,7 +112,7 @@ img {
     display: grid;
     font-size: 50px;
     place-items: center;
-    padding-top: 355px;
+    padding-top: 90px;
 }
 
 .dash-p {
@@ -120,5 +126,312 @@ img {
 .dash-log {
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 500px;
+    padding-bottom: 600px;
+}
+
+.log-out {
+    padding-top: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 12px rgb(251, 37, 37);
+
+}
+
+
+
+
+
+
+/* LOGIN AND SIGNUP BUTTONS */
+
+.signup-but {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+.login-but {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+}
+
+/* Links to pages, "Don't have an account?" */
+
+.signup-reg {
+    display: flex;
+    justify-content: center;
+}
+
+.login-reg {
+    display: flex;
+    justify-content: center;
+}
+
+.log-link {
+    padding-left: 10px;
+    color: #FF1744;
+    margin-bottom: 12px;
+}
+
+.log-link:hover {
+    text-shadow: 0px 0px 12px rgb(251, 37, 37);
+
+}
+.signup-link {
+    padding-left: 10px;
+    color: #FF1744;
+    margin-bottom: 12px;
+}
+
+.signup-link:hover {
+    text-shadow: 0px 0px 12px rgb(251, 37, 37);
+}
+
+
+/* Input fields email and pass */
+.custom-input {
+    background-color: #0f0a19;
+    border: 2px solid yellow;
+    border-radius: 5px;   
+}
+
+
+/* ERROR CUSTOMIZATION */
+.error-style {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+.dash-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f0a19;
+    text-align: center;
+    font-family: 'Press Start 2P', system-ui;
+    padding-top: 150px;
+
+}
+
+.header-image-dash {
+    width: 160px;  
+    height: auto;  /* Keeps the aspect ratio */
+}
+
+.header-image-signup {
+    width: 160px;
+    height: auto;
+}
+
+/* Image */
+.testtt {
+    display: flex;
+    justify-content: center;
+
+
+/* TITLES */
+
+}
+/* Login title */
+.login-t {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 50px rgb(169, 116, 255);
+}
+/* Signup Titles */
+.signup-t {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-shadow: 0px 0px 50px rgb(169, 116, 255);
+}
+
+/* Wrapper around the content to maintain consistent background */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #0f0a19; /* This ensures the entire page has the same background */
+}
+
+/* Ensure the box has the correct styling */
+.box-t {
+    border: 1px solid rgb(115, 115, 234);
+    border-radius: 40px;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 50px #7B68EE, 0px 0px 50px #8A2BE2;
+    background-color: #0f0a19; /* Ensure the box itself has the same background */
+}
+
+.log-email-field {
+    padding-top: 5px;
+    box-shadow: 0px 0px 50px rgb(115, 115, 234); /* Adds a white shadow */
+}
+.signup-email-field{
+    padding-top: 5px;
+    box-shadow: 0px 0px 50px rgb(115, 115, 234); /* Adds a white shadow */
+}
+
+.log-pass {
+    padding-top: 5px;
+    box-shadow: 0px 0px 50px rgb(115, 115, 234); /* Adds a white shadow */
+
+}
+
+.sign-up-pass-field {
+    padding-top: 5px;
+    box-shadow: 0px 0px 50px rgb(115, 115, 234);
+
+}
+
+
+.test-log {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.test-log:hover {
+    text-shadow: 0px 0px 10px rgb(7, 6, 6);
+
+}
+.signup-log:hover {
+    text-shadow: 0px 0px 10px rgb(7, 6, 6);
+
+}
+.signup-log {
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+.box-signup {
+    border: 1px solid rgb(115, 115, 234);
+    border-radius: 40px;
+    padding: 40px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 50px #7B68EE, 0px 0px 50px #8A2BE2;
+    background-color: #0f0a19; /* Ensure the box itself has the same background */
+
+}
+
+.login-pass {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-bottom: 12px;
+    text-shadow: 0px 0px 12px rgb(169, 116, 255);
+
+}
+
+.signup-pass {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-bottom: 12px;
+    text-shadow: 0px 0px 12px rgb(169, 116, 255);
+
+    
+}
+
+.login-email {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 15px rgb(169, 116, 255);
+}
+
+.signup-email {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 12px rgb(169, 116, 255);
+
+}
+
+
+/* FORGOT PASS */
+
+.forgot-pass {
+    font-size: large;
+    display: inline-block; /* Keeps the clickable area limited to the text */
+    cursor: pointer; /* Makes the cursor a pointer when hovering */
+    text-decoration: none; /* Removes the underline by default */
+    margin: 0 auto; /* Center the link within its parent */
+    text-align: center; /* Centers the text */
+    padding: 0; /* Removes unnecessary padding */
+}
+
+.forgot-pass:hover {
+    text-shadow: 0px 0px 12px rgb(169, 116, 255);
+}
+
+.forgot-pass-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Google sign in */
+
+.goog-logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* old button style */
+/* <Button style={{ 
+            width: '60px',   // Set the width of the button
+            height: '60px',  // Set the height of the button
+            fontSize: '10px', // Adjust font size to make the icon scale
+          }}
+          size={1} 
+          colorScheme="white"
+          _hover={{ bg: "white", transform: "scale(1.1)", boxShadow: "0px 0px 50px rgb(115, 115, 234)"
+        }}
+          onClick={signInWithGoogle}><FaGoogle size={40}/></Button> */
+
+.divider-container {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 10px 0; /* Adjust the spacing between elements */
+}
+
+.divider-line {
+flex-grow: 1;
+height: 1px;
+background-color: #7B68EE; /* Line color matching your theme */
+margin: 0 10px; /* Spacing around the text */
+text-shadow: 0px 0px 1px rgb(169, 116, 255);
+
+
+}
+
+.divider {
+text-shadow: 0px 0px 20px rgb(169, 116, 255);
+color: blue;
+font-size: 25px;
+margin: 0 10px; /* Spacing between the lines */
 }
